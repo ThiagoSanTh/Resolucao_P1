@@ -1,0 +1,7 @@
+<h1>Criar tarefas</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Criar</button>
+</form>

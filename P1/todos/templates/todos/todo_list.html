@@ -1,8 +1,8 @@
 <h1>lista de tarefas</h1>
 
 <ul>
-    {% for todo in todos %}
-        <li>{{ todo.title }} - {{ todo.deadçine}}</li>
+    {% for todo in todo_list %}
+        <li>{{ todo.title }} - {{ todo.deadline }}</li>
     {% endfor %}
 </ul>
 <a href="{% url 'todo_create' %}">Criar nova tarefa</a>
